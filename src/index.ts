@@ -27,7 +27,7 @@ const sleep = (sec: number) => {
 
 const log = (msg1: string = '', msg2: string = '') => {
   const el = document.querySelector('#app');
-  el.innerText = `${el.innerText}\n${msg1} ${msg2}`;
+  el.innerText = `${el.innerText}\n${msg1} ${msg2}`.trim();
 };
 
 main();
